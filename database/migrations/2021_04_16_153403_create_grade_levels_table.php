@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFormulasMetasTable extends Migration
+class CreateGradeLevelsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,12 @@ class CreateFormulasMetasTable extends Migration
      */
     public function up()
     {
-        Schema::create('formulas_metas', function (Blueprint $table) {
+        Schema::create('grade_levels', function (Blueprint $table) {
             $table->id();
+            $table->smallInteger('school_year')->unsigned()->nullable();
+            $table->char('grade_level', 10)->nullable();
+            $table->char('grade_level_name', 50)->nullable();
+            $table->tinyInteger('display_order')->unsigned()->nullable();
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreateFormulasMetasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('formulas_metas');
+        Schema::dropIfExists('grade_levels');
     }
 }

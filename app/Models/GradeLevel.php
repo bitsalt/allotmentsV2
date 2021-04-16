@@ -5,14 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class FormulasMeta extends Model
+class GradeLevel extends Model
 {
     use HasFactory;
 
-    public $table = 'allot_formulas_meta';
-
     protected $fillable = [
-        'description',
-        'salary_nonsalary_ind',
+        'school_year',
+        'grade_level',
+        'grade_level_name',
+        'display_order',
     ];
 }

@@ -5,14 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class FormulasMeta extends Model
+class Membership extends Model
 {
     use HasFactory;
 
-    public $table = 'allot_formulas_meta';
+    protected $table = 'membership';
 
     protected $fillable = [
-        'description',
-        'salary_nonsalary_ind',
+        'school_id',
+        'school_year',
+        'day_proj_plan_ind',
+        'grade',
+        'studentcount',
     ];
 }

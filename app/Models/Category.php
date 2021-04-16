@@ -5,14 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class FormulasMeta extends Model
+class Category extends Model
 {
     use HasFactory;
 
-    public $table = 'allot_formulas_meta';
-
     protected $fillable = [
-        'description',
+        'name',
+        'school_year',
+        'fund',
         'salary_nonsalary_ind',
+        'display_order',
     ];
 }
