@@ -9,6 +9,8 @@ class SchoolType extends Model
 {
     use HasFactory;
 
+    public $table = 'school_type';
+
     protected $fillable = [
         'school_year',
         'school_type',

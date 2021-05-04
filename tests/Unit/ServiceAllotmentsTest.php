@@ -2,7 +2,7 @@
 
 namespace Tests\Unit;
 
-use App\Http\SchoolReports\ServiceAllotments;
+use App\Services\ServiceAllotments;
 use App\Models\School;
 use Tests\TestCase;
 use Tests\SchoolData\SchoolData;

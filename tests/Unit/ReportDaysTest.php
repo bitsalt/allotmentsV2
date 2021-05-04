@@ -2,7 +2,7 @@
 
 namespace Tests\Unit;
 
-use App\Http\SchoolReports\ReportingDays;
+use App\Services\ReportingDays;
 use Tests\TestCase;
 
 class ReportDaysTest extends TestCase

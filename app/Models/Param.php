@@ -9,6 +9,8 @@ class Param extends Model
 {
     use HasFactory;
 
+    public $table = 'newparms';
+
     protected $fillable = [
         'param_name',
         'param_num',

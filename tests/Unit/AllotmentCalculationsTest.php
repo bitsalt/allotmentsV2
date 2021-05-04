@@ -4,10 +4,10 @@ namespace Tests\Unit;
 
 
 
-use App\Http\SchoolReports\AllotmentCalculations;
-use App\Http\SchoolReports\Moe;
-use App\Http\SchoolReports\ReportingDays;
-use App\Http\SchoolReports\ScheduleAssistanceHours;
+use App\Services\AllotmentCalculations;
+use App\Services\Moe;
+use App\Services\ReportingDays;
+use App\Services\ScheduleAssistanceHours;
 use App\Models\School;
 use Tests\SchoolData\SchoolData;
 use Tests\TestCase;

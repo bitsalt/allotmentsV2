@@ -2,10 +2,10 @@
 
 namespace Tests\Unit;
 
-use App\Http\SchoolReports\AllotmentCalculations;
-use App\Http\SchoolReports\GradesList;
-use App\Http\SchoolReports\ReportingDays;
-use App\Http\SchoolReports\TeacherLinks;
+use App\Services\AllotmentCalculations;
+use App\Services\GradesList;
+use App\Services\ReportingDays;
+use App\Services\TeacherLinks;
 use App\Models\School;
 use Tests\SchoolData\SchoolData;
 use Tests\TestCase;
